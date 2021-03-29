@@ -26,5 +26,11 @@ def voting_calculator(monday_votes: int, tuesday_votes: int, wednesday_votes: in
 
     return weekdays_votes[0]['day']
 
-most_voted_weekday = voting_calculator(5, 4, 3, 2, 1)
+monday_votes = int(input('Provide Monday votes: '))
+tuesday_votes = int(input('Provide Tuesday votes: '))
+wednesday_votes = int(input('Provide Wednesday votes: '))
+thursday_votes = int(input('Provide Thursday votes: '))
+friday_votes = int(input('Provide Friday votes: '))
+
+most_voted_weekday = voting_calculator(monday_votes, tuesday_votes, wednesday_votes, thursday_votes, friday_votes)
 print('The most voted weekday is {}.'.format(most_voted_weekday))
